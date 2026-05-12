@@ -1,6 +1,5 @@
 
 # RAG_pipeline
-=======
 # Local RAG Assessment Engine
 
 A production-style, modular Retrieval-Augmented Generation (RAG) assessment project built in Python. This project compares two semantic retrieval strategies:
