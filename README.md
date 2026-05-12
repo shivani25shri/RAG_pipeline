@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # RAG_pipeline
 =======
 # Local RAG Assessment Engine
