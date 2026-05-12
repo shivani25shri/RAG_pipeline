@@ -1,0 +1,19 @@
+The autoscaling system dynamically adjusts the number of active virtual machines in a cluster based on real-time traffic patterns. It ensures that resource allocation matches demand, preventing over-provisioning during quiet periods and avoiding latency spikes during high-load events.
+
+Load balancing is a critical component that distributes incoming network traffic across a group of backend servers. By using algorithms like round-robin or least-connections, it prevents any single server from becoming a bottleneck, thereby increasing the overall availability and reliability of the application.
+
+Distributed systems rely on consensus algorithms like Paxos or Raft to maintain state consistency across multiple nodes. These systems are designed to handle partial failures, ensuring that the cluster remains operational even if some individual components go offline.
+
+Implementing a robust retry mechanism with exponential backoff is essential for handling transient network failures. Instead of failing immediately, the system waits for increasing intervals before re-attempting the request, which helps reduce the pressure on downstream services during recovery.
+
+Authentication and authorization are the pillars of system security. Modern architectures use OAuth 2.0 and JWT (JSON Web Tokens) to verify user identity and manage access permissions across microservices, ensuring that sensitive data is protected from unauthorized access.
+
+Caching strategies, such as using Redis or Memcached, significantly reduce database load by storing frequently accessed data in memory. Techniques like cache-aside or write-through ensure that the application can retrieve information with sub-millisecond latency.
+
+Message queues like RabbitMQ or Amazon SQS decouple system components, allowing for asynchronous communication. This architecture enables producers to send messages without waiting for consumers, which is vital for building scalable and resilient data processing pipelines.
+
+System monitoring and observability involve collecting metrics, logs, and traces to understand the health of the application. Tools like Prometheus and Grafana provide real-time dashboards that help engineers detect anomalies and troubleshoot performance issues quickly.
+
+Fault tolerance is the ability of a system to continue functioning even in the presence of hardware or software failures. Redundancy, failover mechanisms, and graceful degradation are common patterns used to achieve high availability in production environments.
+
+Database sharding is a horizontal scaling technique where data is partitioned across multiple database instances. This approach allows systems to handle massive datasets and high transaction volumes that would overwhelm a single monolithic database server.
